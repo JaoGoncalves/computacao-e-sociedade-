@@ -1,0 +1,176 @@
+Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina
+Câmpus Lages
+Ciência da Computação
+Introdução à Programação
+Prof. Wilson Castello Branco Neto
+
+
+                                   Lista de Exercícios 1
+
+1) Calcule os resultados das seguintes expressões:
+5 + 3 * 6 / 2 = 14
+36 / 3 * 2 – 5 +8 = 27
+30 / 4 * 6 = 45
+30 % 4 * 6 = 12
+5*7%3+4/2+5=9
+(5 * 7 % 3 + 4) / 2 + 5 = 8
+(5 * 7 % 3) + 4 / (2 + 5) = 2,57
+(5 * 7 % 3) + 4 / 2 + 5 = 9
+
+
+2) Monte a tabela do teste de mesa para o programa abaixo.
+
+public static void main(String[] args) {
+int p, vari, total, a, i;
+float valor_a, x;
+vari = 2;
+total = 10;
+valor_a = 7;
+a = -4;
+i = 80;
+x = 4;
+x = total / vari;
+x = x + 1;
+a = a + 1;
+p = 10;
+a = i / p;
+a = a + i % 6;
+valor_a = p * valor_a + x;
+}
+
+R:
+Linhas       p    vari   total    a     i   Valor_a   x
+1 a 3    ?         ?      ?      ?     ?       ?      ?
+  4                2
+  5                2      10
+  6                2      10                  7
+  7                2      10     -4           7
+  8                2      10     -4   80      7
+  9                2      10     -4   80      7       4
+  10               2      10     -4   80      7       5
+  11               2      10     -4   80      7       6
+  12               2      10     -3   80      7       6
+  13         10    2      10     -3   80      7       6
+  14         10    2      10      8   80      7       6
+  15         10    2      10     10   80      7       6
+  16         10    2      10     10   80      76      6
+3) Faça um programa que leia dois números, calcule e apresente a soma dos quadrados
+destes números.
+                             Entradas                 Saídas
+                          A                B                   SQ
+                          5                3                    34
+                          2                6                    40
+                          0                4                    16
+                          -3               2                    13
+
+
+4) Faça um programa que leia dois números, calcule e apresente o quadrado da soma
+destes números.
+                            Entradas                 Saídas
+                          A                B                   SQ
+                          5                3                    64
+                          2                6                    64
+                          0                4                    16
+                          -3               2                    1
+
+5) Crie um programa que leia as medidas da base e altura de um retângulo, calcule e
+apresente a área e o perímetro deste retângulo.
+               Entradas                   Saídas
+                  Base            Altura        Área            Perímetro
+                   3                   1          3                  8
+                   2                   4          8                  12
+                   5                   2         10                  14
+                   6                   4         24                  20
+
+6) Escreva um programa que leia a temperatura em graus Celsius e apresente a
+temperatura correspondente em graus Fahrenheit, usando a fórmula abaixo.
+
+
+
+
+                       Entradas                Saídas
+                                  C                      F
+                                  10                     50
+                               25,3                     77,54
+                                  -8                    17,6
+                                  0                      32
+7) Uma sorveteria vende três tipos de picolés. Sabendo-se que o picolé tipo 1 é vendido
+por R$ 1,50, o do tipo 2 por R$ 2,00 e o do tipo 3 por R$ 0,75, faça um programa que leia
+a quantidade vendida de cada tipo de picolé e apresente o valor arrecadado com as vendas
+de cada tipo de picolé e o valor total das vendas.
+
+Entradas                                            Saídas
+   QTipo1           QTipo2        QTipo3              VTipo1            VTipo2           VTipo3         VTotal
+       20             15               12              30,00            30,00             9,00          69,00
+       25              8               10              37,50            16,00             7,50          61,00
+       13             32               14              19,50            64,00            10,50          94,00
+       27             10               12              40,50            20,00             9,00          69,50
+
+8) Uma revendedora de carros paga a seus vendedores um salário fixo equivalente a dois
+salários-mínimos, mais uma comissão de R$ 150,00 por carro vendido e mais uma
+comissão de 5% do valor das vendas. Crie um programa que leia o valor do salário- mínimo,
+quantos carros o vendedor vendeu ao longo do mês e o valor total das vendas. Após ler os
+dados, o programa deve calcular e apresentar o valor do salário do funcionário.
+
+             Entradas                                                          Saídas
+                  Sal. Mínimo     Quant. Vendida         Valor Vendas              Salário
+                     1000                   4                  55000                5350
+                     1200                   8                  120000               9600
+                     1100                   5                 110000                8450
+                     1000                   6                  100000               7900
+
+9) Uma pessoa foi ao supermercado e comprou:
+     Q quilos de café, cujo custo unitário é X;
+     L litros de leite, cujo custo unitário é Y;
+     B pacotes de bolacha, cujo custo unitário é Z.
+
+Faça um programa que leia estes dados e imprima, para cada produto: nome do produto,
+total gasto com ele. Além disto, ele deve apresentar o total gasto na compra.
+
+Entradas                                                            Saídas
+QCafé CCafé          LLeite CLeite BBolacha CBolacha GCafé GLeite GBolacha                               GTotal
+   5        2,2        3        1,8             2            4,3         11        5,4           8,6       25
+   3        1,98       5        2,1             5            3,5        5,94      10,5           17,5     33,94
+   2        4,3        3        2,25            3            3          8,6       6,75            9       24,35
+   2         2         10       1,6             5            2,2         4         16            11        31
+10) Faça um programa que leia um número inteiro e apresente o quociente e o resto da
+divisão deste número por 2.
+
+                      Entradas                       Saídas
+                       Numero            Quociente             Resto
+                         12                 6                       0
+                          5                 2                       1
+                         32                 16                      0
+                         19                 9                       1
+
+
+11) (DESAFIO) Crie um programa que leia um número inteiro que representa a quantidade
+de segundos de um vídeo. O programa deve calcular e apresentar quantas horas, minutos
+e segundos dura este vídeo.
+
+                       Entradas                  Saídas
+                              Segundos                    Duracao
+                                43231                 12h0m31s
+                                 3670                  1h1m10s
+                                  65                      0h1m5s
+                                  43                   0h0m43s
+
+
+12) Um restaurante a quilo cobra R$39,00 por quilo de refeição. Escreva um programa que
+leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a pagar. Obs. O
+prato vazio pesa 450 gramas.
+
+13) Escreva um programa que receba um horário (horas, minutos e segundos) e determine
+quantos segundos já se passaram desde que o dia começou.
+
+14) Escreva um programa que receba um horário (horas, minutos e segundos) e determine
+quantos segundos ainda faltam para terminar o dia (considere o dia com 24 horas).
+
+15) Faça um programa que receba o peso de uma pessoa, calcule e apresente:
+a) o novo peso se a pessoa engordar 15% sobre o peso digitado;
+b) o novo peso se a pessoa emagrecer 20% sobre o peso digitado.
+
+16) João recebeu seu salário de R$ 1500,00 e precisa pagar duas contas (C1=R$ 200,00e
+C2=R$120,00). Como as contas estão atrasadas, João terá de pagar multa de 2% sobre
+cada conta. Faça um programa que calcule e mostre quanto restará do salário do João.
+

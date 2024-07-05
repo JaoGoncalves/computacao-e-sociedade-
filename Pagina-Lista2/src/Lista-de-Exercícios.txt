@@ -1,0 +1,20 @@
+
+
+
+1. Escreva um algoritmo que imprima na tela seu nome.
+
+2. Escreva um algoritmo para ler um número inteiro e imprimi-lo na tela.
+3. Escreva um algoritmo para leu um número inteiro e imprimir na tela seu sucessor e seu
+ antecessor.
+4. Escreva um algoritmo para ler um nome, um endereço e um telefone e imprimi-los na tela.
+5. Escreva um algoritmo para calcular o valor de y como função de x, segundo a função y(x) = 3x + 2, num domínio real.
+
+6. 	Escreva um algoritmo para calcular o consumo médio de um automóvel (medido em Km/l), dado que são conhecidos a distância total percorrida e o volume de combustível consumido para percorrê- la (medido em litros). Fórmula: consumo = distancia / volume
+
+7. Escreva um algoritmo para calcular o quadrado de um número, ou seja, o produto de um número por si mesmo.
+
+8. 	Escreva um algoritmo para ler quatro números, calcular o quadrado de cada um deles, somar tudo e mostrar o resultado.
+
+9. Escreva um algoritmo que calcule a raiz quadrada de um número informado pelo usuário.
+
+10.  Escreva um algoritmo que dada uma temperatura em Celsius ele faz a conversão paraFahreheit. A fórmula para tal conversão é: F = (9 * C + 160) / 5.

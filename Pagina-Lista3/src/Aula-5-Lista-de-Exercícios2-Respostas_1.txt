@@ -1,0 +1,161 @@
+Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina
+Câmpus Lages
+Ciência da Computação
+Introdução à Programação
+Prof. Wilson Castello Branco Neto
+
+                                          Lista de Exercícios 2
+
+1) Apresente os resultados (true ou false) das seguintes expressões:
+5 + 3 * 6 / 2 >= 10 R: true
+36 / 3 * 2 – 5 +8 == 27 R: true
+! (30 / 4 * 6 == 15) R: true
+(30 % 4 * 6 == 12) || true R: true
+(5 * 7 % 3) + 4 / 2 + 5 == 12 && (12 / 4 < 8) R: false
+(((5 * 7 % 3 + 5) / 2 + 5) <= 14) II (! (12 / 4 < 8 * 2)) R: true
+
+
+2)     Crie um programa que leia o preço do quilowatt de energia e a quantidade gasta
+dequilowatts em uma residência. O programa deve calcular e imprimir o valor a ser pago
+pela residência caso a conta seja paga no dia e o valor a ser pago caso a conta seja paga
+em atraso. Caso a conta seja paga em atraso, deve-se acrescentar 10% sobre o valor da
+conta. O programa não deve perguntar se a conta será paga em atraso ou não, ele deve
+sempre calcular e apresentar os dois valores, para que o usuário analise a diferença e
+decida se vai pagar a conta em dia ou não.
+               Entradas                       Saídas
+
+                   Preço       Quilowatts        Conta     Conta Atraso
+                    0,80             60          48,00         52,80
+
+                    0,75          100            75,00         82,50
+                    1,00             80          80,00         88,00
+                    1,20             50          60,00         66,00
+3)    Crie uma nova versão do programa da questão 2 para que ele mostre uma
+mensagem indicando se a residência está com consumo elevado de energia. A empresa
+considera consumo elevado de energia, se a residência consumir mais de de 70 quilowatts.
+               Entradas                     Saídas
+
+                  Preço     Quilowatts        Conta    Conta Atraso    Consumo Elevado
+                  0,80          60            48,00       52,80             false
+                  0,75          100           75,00       82,50             true
+
+                  1,00          80            80,00       88,00             true
+                     1,20           50        60,00        66,00               false
+4)    Faça um programa que leia o peso de uma pessoa (Kg) e sua altura (Metros), calcule
+eimprima o seu índice de massa corporal, usando a seguinte fórmula: IMC = Peso / Altura2.
+Além do IMC, o programa deve mostrar se a pessoa está acima do peso ideal (IMC > 25).
+              Entradas                        Saídas
+
+                      Peso          Altura           IMC     Acima do peso
+
+                       70              1,83       20,90            false
+                       85              1,62       32,39            true
+
+                       60              1,58       24,03            false
+                      102              1,90       28,25            true
+5)     O sistema de avaliação de uma disciplina é composto de duas provas e um
+trabalho.Para ser aprovado, o aluno precisa ter nota igual ou superior a sete no trabalho e
+nota igual ou superior a seis em pelo menos uma das provas. Observe que não se deve
+calcular a média das notas. Faça um programa que leia as três notas do aluno e
+apresente se ele deve ser aprovado ou não.
+        Entradas                                                           Saídas
+
+            Prova 1                 Prova 2                Trabalho                Aprovado
+
+                 8                       4                    7                        true
+                 9                       10                   4                        false
+                 3                       5                    8                        false
+
+                 6                       6                    8                        true
+6)     Crie uma nova o programa da questão 5, para que ele considere a frequência do
+aluno.Agora, para ser aprovado o aluno precisa ter nota igual ou superior a sete no trabalho,
+nota igual ou superior a seis em pelo menos uma das provas e frequência igual ou superior
+a 75%. Além desta diferença, caso o aluno tenha nota seis no trabalho ele poderá ser
+aprovado, mas para isto precisa ter frequência igual ou superior a 90%.
+        Entradas                                                                  Saídas
+
+          Prova 1            Prova 2          Trabalho            Frequência           Aprovado
+             8                 4                 7                    80                  true
+
+             9                 10                4                    85                  false
+             3                 5                 8                    98                  false
+             6                 6                 8                    60                  false
+
+             8                 4                 6                    92                  true
+7)      Crie um programa para auxiliar engenheiros a calcular a quantidade de piso a
+serutilizado em uma sala retangular, a quantidade de tinta a ser gasta nas paredes, bem
+como a potência do ar-condicionado. Para isto, o programa deve ler o comprimento, a
+largura e a altura da sala, calcular e imprimir a área de piso da sala, a área total das paredes
+e o volume da sala. O programa deve mostrar também o tamanho do aparelho de ar-
+condicionado a ser instalado. Um pequeno deve ser instalado se o volume da sala for
+inferior a 100 m3; um aparelho médio deve ser instalado se o volume da sala estiver entre
+100 e 500 m3; e um aparelho grande deve ser instalado caso o volume seja superior a 500
+m3.
+Entradas                            Saídas
+
+ Altura Comprimento        Largura Area            Volume          Area     Ar     Ar     Ar
+                                   Piso                           Paredes Pequeno Médio Grande
+    3           5            9         45            135            84       false     true        false
+
+    2           1            3         3               6            16        true     false       false
+    5          20            10       200            1000          300       false     false       true
+9)     Escreva um programa que leia o valor da compra e o valor pago pelo cliente.
+Oprograma deve calcular e apresentar, o valor da compra, o valor pago pelo cliente, o valor
+do troco e a quantidade de notas que deve ser dada de cada tipo para formar este troco.
+O troco deve ser dado de forma a minimizar a quantidade de notas distribuídas.
+    Entradas                      Saídas
+
+    Valor           Valor Pago     Valor Troco             Notas 100        Notas 10     Notas 1
+    Compra
+         738          1000             262                    2                6               2
+         87            100             13                     0                1               3
+
+         265           500             235                    2                3               5
+           6           10               4             0              0            4
+11) Faça um programa que calcule os gastos com combustível em uma viagem. Oprograma
+    deve solicitar ao usuário a distância a ser percorrida em Km, o consumo médio do carro
+    (quantos quilômetros o carro percorre com um litro de combustível) em Km/litro e o
+    preço do litro do combustível. O programa deve calcular e apresentar o valor em R$ a
+    ser gasto com combustível na viagem.
+
+12) Faça um programa que leia dois números A e B e mostre se eles são iguais.
+
+13) Faça um programa que leia os valores A, B e C e informe se a soma de A com B é
+    menor ou igual a C.
+
+14) Considere que o último concurso vestibular apresentou três provas:
+    Português,Matemática e Conhecimentos Gerais. Para cada candidato tem-se um
+    registro contendo o seu nome e as notas obtidas em cada uma das provas. Construa
+    um programa que leia estes dados e apresente:
+       a) o nome e as notas em cada prova do candidato.
+       b) a média do candidato.
+       c) uma informação dizendo se o candidato foi aprovado ou não. Considere que
+          umcandidato é aprovado se sua média for maior que 7.0 e se não apresentou
+          nenhuma nota abaixo de 5.0
+15) Faça um programa leia o salário bruto e o número de dependentes de um funcionárioe
+    calcule o seu salário líquido. Para calcular o salário líquido, deve-se descontar:
+       - 11% de INSS;
+       - 15% de Imposto de renda.
+
+      Após os descontos, deve-se adicionar um auxílio de R$ 150,00 por dependente.
+
+16) Faça um programa que leia o preço de três mercadorias no dia 01/01/2022 e o no
+    dia01/02/2022. Em seguida o programa deve calcular a inflação do período,
+    considerando a variação de preço dos três produtos. Mostre uma mensagem se a
+    inflação está acima da meta ou não (considere que a meta para o mês é de 0,55%).
+
+17) Faça um programa que leia a quantidade total de parcelas de um consórcio,
+    aquantidade de parcelas já pagas e o valor de cada parcela (considere que todas as
+    parcelas tem o mesmo valor). O programa deve calcular e apresentar o total já pago
+    pelo cliente e qual é o seu saldo devedor.
+
+18) Faça um programa que leia o dia, o mês e o ano de nascimento de uma pessoa e odia,
+    mês e ano atual. Em seguida, o programa deve calcular e apresentar quantos dias a
+
+pessoa já viveu (considere que todos os meses têm 30 dias e, por consequência, cada ano
+tem 360 dias).
+
+19) Faça um programa que leia um número inteiro entre 0 e 999 e apresente a soma
+    dosseus dígitos. Por exemplo, se o número digitado por 284 o resultado será igual a 14
+    (2+8+4).
+
